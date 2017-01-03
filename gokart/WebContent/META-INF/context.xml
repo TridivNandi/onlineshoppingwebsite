@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context path="/gokart">
+	<Resource name="jdbc/CustomerDataSource" auth="Container" maxActive="200" maxIdle="30" maxWait="10000"
+	 username="scott" password="tiger" driverClassName="oracle.jdbc.driver.OracleDriver"
+	 url="jdbc:oracle:thin:@localhost:1521:XE" logAbandoned="true" removeAbandoned="true"
+	 removeAbandonedTimeOut="60" type="javax.sql.DataSource" />
+	   
+	<Resource name="jdbc/DbmUserDataSource" auth="Container" maxActive="10" maxIdle="30" maxWait="20"
+	 username="dbm" password="parker" driverClassName="oracle.jdbc.driver.OracleDriver"
+	 url="jdbc:oracle:thin:@localhost:1521:XE" logAbandoned="true" removeAbandoned="true"
+	 removeAbandonedTimeOut="60" type="javax.sql.DataSource" />
+	   
+	<Resource name="jdbc/AdminDataSource" auth="Container" maxActive="5" maxIdle="30" maxWait="0"
+	 username="admin" password="rmsgnu83" driverClassName="oracle.jdbc.driver.OracleDriver"
+	 url="jdbc:oracle:thin:@localhost:1521:XE" logAbandoned="true" removeAbandoned="true"
+	 removeAbandonedTimeOut="60" type="javax.sql.DataSource" />
+	   
+</Context>
